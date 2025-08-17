@@ -1,5 +1,5 @@
 public class LiveLock {
-    private String name;
+    private final String name;
     private boolean transition;
     private boolean passesNext;
 

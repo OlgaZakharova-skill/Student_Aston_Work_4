@@ -9,7 +9,7 @@ public class Main {
                 System.out.println("Thread 1 took the first object");
                 try {
                     Thread.sleep(50);
-                } catch (InterruptedException e) {
+                } catch (InterruptedException exception) {
                 }
                 System.out.println("Thread 1 tries to pick up the second object");
                 synchronized (objectTwo) {
@@ -23,7 +23,7 @@ public class Main {
                 System.out.println("Thread 2 took the second object");
                 try {
                     Thread.sleep(50);
-                } catch (InterruptedException e) {
+                } catch (InterruptedException exception) {
                 }
                 System.out.println("Thread 2 tries to pick up the first object");
                 synchronized (objectOne) {
